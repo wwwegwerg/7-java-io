@@ -13,7 +13,7 @@ public class Task02Main {
         int prev = System.in.read(), next;
         while (prev != -1) {
             next = System.in.read();
-            if (prev != 13 || next != 10) {
+            if (!(prev == 13 && next == 10)) {
                 System.out.write(prev);
             }
             prev = next;
